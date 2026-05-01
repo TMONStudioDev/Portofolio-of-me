@@ -1,0 +1,13 @@
+# Folder cache Godot (Wajib diabaikan)
+.godot/
+
+# File log dan temporary
+*.log
+*.tmp
+
+# Hasil export (jika nanti kamu mulai melakukan build)
+build/
+android/
+
+# Folder library pihak ketiga (jika ada)
+addons/

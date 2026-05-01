@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://bk7vjw4n0pp53"]
+
+[ext_resource type="Script" uid="uid://caurfxupbvwgk" path="res://language_button.gd" id="1_ig7tw"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_7dm0k"]
+font_size = 50
+
+[node name="Node2D" type="Node2D" unique_id=1421614155]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1519784360]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.840004, 16.2)
+color = Color(0.5176471, 1, 1, 1)
+
+[node name="Label_01" type="Label" parent="." unique_id=845742109]
+auto_translate_mode = 1
+modulate = Color(0, 0, 0, 1)
+offset_left = 314.0
+offset_top = 242.0
+offset_right = 834.0
+offset_bottom = 311.0
+text = "sapaan_001"
+label_settings = SubResource("LabelSettings_7dm0k")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Label_02" type="Label" parent="." unique_id=132988645]
+auto_translate_mode = 1
+modulate = Color(0, 0, 0, 1)
+offset_left = 315.0
+offset_top = 318.0
+offset_right = 829.0
+offset_bottom = 387.0
+text = "tombol_ubah_bahasa"
+label_settings = SubResource("LabelSettings_7dm0k")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="language-button" type="Control" parent="." unique_id=329509923]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 66.0
+offset_top = -78.0
+offset_right = 106.0
+offset_bottom = -38.0
+script = ExtResource("1_ig7tw")
+
+[node name="ja" type="Button" parent="language-button" unique_id=1315526575]
+layout_mode = 0
+offset_left = 640.0
+offset_top = 472.0
+offset_right = 745.0
+offset_bottom = 520.0
+text = "jepang"
+
+[node name="in" type="Button" parent="language-button" unique_id=995054106]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 472.0
+offset_right = 561.0
+offset_bottom = 521.0
+text = "inggris"
+
+[node name="id" type="Button" parent="language-button" unique_id=1288643814]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 472.0
+offset_right = 385.0
+offset_bottom = 521.0
+text = "indonesia"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1585806822]
+position = Vector2(576, 324)
+
+[connection signal="pressed" from="language-button/ja" to="language-button" method="_on_ja_pressed"]
+[connection signal="pressed" from="language-button/in" to="language-button" method="_on_in_pressed"]
+[connection signal="pressed" from="language-button/id" to="language-button" method="_on_id_pressed"]

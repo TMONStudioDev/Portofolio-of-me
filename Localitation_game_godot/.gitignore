@@ -1,0 +1,7 @@
+# Godot 4+ ignore rules
+.godot/
+*.log
+*.tmp
+android/
+ios/
+build/

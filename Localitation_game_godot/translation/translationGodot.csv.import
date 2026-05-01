@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bfhw7p0gkmkpx"
+
+[deps]
+
+files=["res://translation/translationGodot.id.translation", "res://translation/translationGodot.en.translation", "res://translation/translationGodot.ja.translation"]
+
+source_file="res://translation/translationGodot.csv"
+dest_files=["res://translation/translationGodot.id.translation", "res://translation/translationGodot.en.translation", "res://translation/translationGodot.ja.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true
